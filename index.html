@@ -28,7 +28,6 @@
             background-color: #4b7ed9; 
         }
 
-
         nav ul li:nth-child(3) a {
             background-color: #eceff5; 
             color: #3b5998;
@@ -40,7 +39,33 @@
             background-color: #d8df;
         }
         
-        </style>
+        /* Style for Search Bar */
+        nav form {
+            float: right;
+            margin-top: 10px;
+        }
+
+        nav input[type="text"] {
+            padding: 6px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        nav input[type="submit"] {
+            padding: 6px 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        nav input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body background="Lloyd1.jpeg">
     <nav>
@@ -50,6 +75,12 @@
             <li><a href="https://lloydtzy16.github.io/Labilles../">Music</a></li>
             <li><a href="https://lloydtzy16.github.io/Labilles123/">Video</a></li>
             <li><a href="https://lloydtzy16.github.io/CoffeeShopLabilles.html/">Coffee Menu</a></li>
+            
+            <!-- Search Bar -->
+            <form action="/search" method="GET">
+                <input type="text" name="query" placeholder="Search...">
+                <input type="submit" value="Search">
+            </form>
         </ul>
     </nav>
     <h1 style="color: white;">Welcome to my website</h1>
